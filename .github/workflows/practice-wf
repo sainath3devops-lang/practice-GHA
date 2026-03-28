@@ -1,0 +1,23 @@
+name: practice
+on: workflow_dispatch
+jobs:
+    build:
+        name: build-job
+        runs-on: ubuntu-latest
+        steps:
+            - name: Building application step
+              run: echo "Building application"
+            
+            - name: Build completed-step
+              run: echo "Build completed"
+    test:
+        name: test-job
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+            - name: Running tests step
+              run: echo "Running tests"
+            
+            - name: Tests completed step
+              run: echo "Tests completed"
+            
