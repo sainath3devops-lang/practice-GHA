@@ -1,8 +1,13 @@
-name: hello-world
+name: hello-world-wf
 on: workflow_dispatch
 jobs:
-  hello-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: hello-step
-        run: echo "hello welcome to GHA"
+    hello-world-jobid:
+        name: hello-job
+        runs-on: ubuntu-latest
+        steps:
+            - name: hello-step
+              run: |
+               echo "hello-welcome to GHA"
+               echo "this pipe symbol used for multiple shell commands"
+              
+                   
