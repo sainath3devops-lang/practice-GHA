@@ -20,4 +20,13 @@ jobs:
             
             - name: Tests completed step
               run: echo "Tests completed"
+    deploy:
+        name: deploy-job
+        needs: test
+        runs-on: ubuntu-latest
+        steps:
+            - name: deploy steps
+              run: |
+               echo "deploy stage"
+               echo "deploy completed"
             
