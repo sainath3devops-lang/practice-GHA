@@ -1,0 +1,9 @@
+name: chekout-GHA
+on: push
+jobs:
+  chekout-GHA-jobid:
+    name: chekout-GHA-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking out code
+        uses: actions/checkout@v4
