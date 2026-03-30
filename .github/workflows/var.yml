@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: variable-print-step
-        run: echo "hi,{{ vars.MY_NAME }}
+        run: echo "hi,{{ vars.MY_NAME }}"
