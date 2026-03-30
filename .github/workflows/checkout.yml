@@ -7,3 +7,7 @@ jobs:
     steps:
       - name: checking out code
         uses: actions/checkout@v4
+      - name: verifying the code
+        run: |
+          cat index.html
+          ls -lahrt
