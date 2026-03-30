@@ -11,3 +11,4 @@ jobs:
         run: |
           cat index.html
           ls -lahrt
+          git branch
