@@ -1,9 +1,9 @@
 name: push-check-wf
-on: push
+on: ["push","pull_request"]
 jobs:
   pull-jobid:
     name: push-trigger-job
     runs-on: ubuntu-latest
     steps:
       - name: push-step
-        run: echo "this workflow is testing for push trigger"
+        run: echo "this workflow is testing for push trigger event trigger"
