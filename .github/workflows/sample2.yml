@@ -14,6 +14,6 @@ jobs:
     steps:
       - name: push-pr-main-step
         run: |
-          echo "this is runnig with pr"
+          echo "this is runnig with pr against"
           ls -lahrt
           
