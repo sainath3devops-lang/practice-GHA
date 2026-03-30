@@ -1,0 +1,19 @@
+name: push-pr-wf
+on:
+  push:
+    branches:
+      - main
+      - release/*
+  pull_request:
+    branches:
+      - main
+jobs:
+  push-pr-main-jobid:
+    name: push-pr-main-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: push-pr-main-step
+        run: |
+          echo "this is runnig with pr against"
+          ls -lahrt
+          
